@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Search</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+
+  <body>
+    <div>
+      <a
+        class="link"
+        href="google.html"
+        style="float: right; padding-inline: 20px;"
+        >Google</a
+      >
+    </div>
+    <h1>Advanced Search</h1>
+
+    <h3>Find pages with...</h3>
+
+    <form action="https://google.com/search">
+      <div>
+        <div>
+          <label>all these words:</label>
+        </div>
+
+        <div>
+          <input type="text" name="as_q" />
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <label>this exact word or phrase:</label>
+        </div>
+
+        <div>
+          <input type="text" name="as_epq" />
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <label>any of these words:</label>
+        </div>
+
+        <div>
+          <input type="text" name="as_oq" />
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <label>none of these words:</label>
+        </div>
+
+        <div>
+          <input type="text" name="as_eq" />
+        </div>
+      </div>
+
+      <div style="text-align: left;">
+        <input
+          type="submit"
+          value="Advanced Search"
+          style="
+            -webkit-user-select: none;
+            user-select: none;
+            line-height: 100%;
+            height: 30px;
+            min-width: 120px;
+            background-color: #4d90fe;
+            color: white;
+          "
+        />
+      </div>
+    </form>
+  </body>
+</html>
