@@ -1,79 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Search</title>
-    <link rel="stylesheet" href="stylesheet.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="advanced-search.css" />
+    <link rel="icon" href="images/g-logo.jpg" type="image/icon type" />
   </head>
-
   <body>
     <div>
-      <a
-        class="link"
-        href="google.html"
-        style="float: right; padding-inline: 20px;"
-        >Google</a
+        <div style="height: 60px; background: #f1f1f1;">
+            <img
+            alt="Google-logo"
+            src="images/google-logo.png"
+            style="background-position: 0 -35px;
+            height: 33px;
+            width: 92px;
+            display: block;
+            padding : 15px;
+            display: inline;
+            "
+          />
+            <a
+            class="link"
+            href="google.html"
+            style="float: right; padding-inline: 20px;
+            margin: 20px;
+            width: 50px;
+            color:black"
+            >Google</a
+            >
+      </div>
+      <div style="padding : 20px">
+      <label
+        style="
+          margin-left: 10px;
+          color: #d93025;
+          margin: 10px 35px;
+          font-size: 40px;
+          font-family: Arial, sans-serif;
+        "
+        >Advanced Search</label
       >
     </div>
-    <h1>Advanced Search</h1>
+      </div>
+      <hr style="width: 100%; text-align: left; margin-left: 0;" />
+    <div
+      style="
+        max-width: 1140px;
+        min-width: 200px;
+        width: 96%;
+        margin: 40px 2% 0 45px;
+      "
+    >
+      <form action="https://google.com/search">
 
-    <h3>Find pages with...</h3>
-
-    <form action="https://google.com/search">
-      <div>
-        <div>
-          <label>all these words:</label>
-        </div>
-
-        <div>
-          <input type="text" name="as_q" />
+      <div class="full-line">
+        <div class="inner-line">
+          <div class="first-block">
+            <div class="inner-label">
+              <span>Find pages with...</span>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div>
-        <div>
-          <label>this exact word or phrase:</label>
-        </div>
-
-        <div>
-          <input type="text" name="as_epq" />
-        </div>
-      </div>
-
-      <div>
-        <div>
-          <label>any of these words:</label>
-        </div>
-
-        <div>
-          <input type="text" name="as_oq" />
-        </div>
-      </div>
-
-      <div>
-        <div>
-          <label>none of these words:</label>
-        </div>
-
-        <div>
-          <input type="text" name="as_eq" />
+      <div class="full-line">
+        <div class="inner-line">
+          <div class="label-div">
+            <div class="inner-label">
+              <label for="all-words">all these words:</label>
+            </div>
+          </div>
+          <div class="textbox-div">
+            <div class="textbox">
+              <input
+                value
+                autofocus="autofocus"
+                name="as_q"
+                type="text"
+                class="jfk-textinput"
+                id="all-words"
+              />
+            </div>
+          </div>
         </div>
       </div>
 
-      <div style="text-align: left;">
-        <input
-          type="submit"
-          value="Advanced Search"
-          style="
-            -webkit-user-select: none;
-            user-select: none;
-            line-height: 100%;
-            height: 30px;
-            min-width: 120px;
-            background-color: #4d90fe;
-            color: white;
-          "
-        />
+      <div class="full-line">
+        <div class="inner-line">
+          <div class="label-div">
+            <div class="inner-label">
+              <label for="exact-word">this exact word or phrase:</label>
+            </div>
+          </div>
+          <div class="textbox-div">
+            <div class="textbox">
+              <input
+                value
+                autofocus="autofocus"
+                name="as_epq"
+                type="text"
+                class="jfk-textinput"
+                id="exact-word"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="full-line">
+        <div class="inner-line">
+          <div class="label-div">
+            <div class="inner-label">
+              <label for="any-word">any of these words:</label>
+            </div>
+          </div>
+          <div class="textbox-div">
+            <div class="textbox">
+              <input
+                value
+                autofocus="autofocus"
+                name="as_oq"
+                type="text"
+                class="jfk-textinput"
+                id="any-word"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="full-line">
+        <div class="inner-line">
+          <div class="label-div">
+            <div class="inner-label">
+              <label for="no-word">none of these words: </label>
+            </div>
+          </div>
+          <div class="textbox-div">
+            <div class="textbox">
+              <input
+                value
+                autofocus="autofocus"
+                name="as_eq"
+                type="text"
+                class="jfk-textinput"
+                id="no-word"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="full-line">
+        <div class="inner-line">
+          <div class="label-div">
+            <div class="inner-label"></div>
+          </div>
+          <div class="textbox-div">
+            <input 
+                class="jfk-button jfk-button-action dUBGpe" 
+                style="background-color: #4d90fe;
+                border: 1px solid #3079ed;
+                color: #fff;
+                user-select:none;
+                line-height:100%;
+                height:30px;
+                min-width:120px;
+                box-shadow: none;
+                float:right;
+                margin: 10px 0;
+                padding: 0 12px;
+                font-weight: bold;" 
+                value="Advanced Search" 
+                type="submit"
+                >       
+             </div>
+          </div>
+        </div>
       </div>
     </form>
+    </div>
   </body>
 </html>

@@ -1,5 +1,4 @@
 div {
-  padding-inline: 20px;
   padding: 20px;
   display: block;
 }
@@ -72,4 +71,38 @@ center {
   align-items: center;
   justify-content: flex-end;
   display: flex;
+}
+
+.advanced-label {
+  float: left;
+  display: inline-block;
+  min-width: 167px;
+  width: 16%;
+  height: 42px;
+  color: black;
+  font-size: 13px;
+  line-height: 16px;
+  vertical-align: middle;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.advanced-textbox {
+  float: left;
+  display: inline-block;
+  min-width: 167px;
+  min-height: 41px;
+  vertical-align: middle;
+  width: 100%;
+  padding-right: 15px;
+  border-radius: 1px;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  font-size: 13px;
+  height: 25px;
+  padding: 1px 8px;
+  display: inline-block;
+  text-align: left;
+  font-family: Arial, sans-serif;
 }
