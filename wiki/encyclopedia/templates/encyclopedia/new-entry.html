@@ -1,0 +1,32 @@
+{% extends "encyclopedia/layout.html" %}
+{% block title %}
+
+{% if edit %}
+Editing {{ title }}
+{% else %}
+New Entry
+{% endif %}
+{% endblock %}
+{% block body %}
+
+{% if not edit %}
+<h1>Create New Entry!!!</h1>
+{% else %}
+<h1>Editing {{ title }}</h1>
+{% endif %}
+
+{% if entryExist %}
+<div class="alert alert-danger" role="alert">
+    Entry : {{ title }} already exists. If you want to view or edit it, <a href="/wiki/{{ title }}"
+        class="alert-link">click
+        here</a>.
+</div>
+{% endif %}
+<div class="form-group">
+    <form action="{% url 'newPage' %}" method="POST">
+        {% csrf_token %}
+        {{form.as_p }}
+        <input type="submit">
+    </form>
+</div>
+{% endblock %}
